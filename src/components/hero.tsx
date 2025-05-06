@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section className="bg-1 pt-16">
+    <section className="pt-16">
       <div className="relative font-manrope h-dvh grid gap-x-24 grid-cols-2 text-white px-16 pt-32 pb-16">
         {/* Floating dots */}
         <span className="absolute top-1/2 left-1/4 w-2 h-2 bg-green-primary rounded-full"></span>
@@ -44,7 +44,7 @@ const HeroSection = () => {
             </span>
           </p>
         </div>
-        <div className="code-editor relative text-sm">
+        <div className="code-editor-container relative text-sm">
           <div className="code-editor-selector absolute bottom-0 -left-1/8 w-full bg-dark-secondary rounded-md p-4 shadow-green-transparent shadow-2xl">
             <ul className="flex flex-col gap-y-1">
               <li className="flex items-center gap-x-2 bg-green-transparent rounded-lg p-1 hover:bg-green-transparent">
@@ -84,7 +84,7 @@ const HeroSection = () => {
               </li>
             </ul>
           </div>
-          <div className="code0 w-5/7 h-full bg-dark-secondary rounded-md p-8 ml-auto">
+          <div className="code-editor w-4/5 h-full bg-dark-secondary rounded-md p-8 ml-auto">
             <p className="font-manrope-medium leading-8">
               <span className="text-dark-primary mr-6">1</span>
               <span className="text-dark-tertiary">{"<?php"}</span>

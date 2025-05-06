@@ -1,7 +1,7 @@
 const Features = () => {
   return (
     <section>
-      <div className="px-16 py-16 bg-dark-secondary">
+      <div className="px-16 py-16">
         <h2 className="text-white text-5xl font-manrope-bold">
           Our features
         </h2>

@@ -4,11 +4,11 @@ import NavBar from "./components/nav";
 import Features from "./components/features";
 function App() {
   return (
-    <>
+    <main className="bg-1">
       <NavBar />
       <Hero />
       <Features />
-    </>
+    </main>
   );
 }
 

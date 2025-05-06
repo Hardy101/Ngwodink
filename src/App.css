@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 .bg-1 {
-  background: radial-gradient(circle at top left, #1c2b22, #0a1b13, #050d09);
+  background: linear-gradient(to bottom, #1c2b22 0%, #15251d 40%, #0e1817 70%, #0b0c17 100%);
+
 }
 
 @theme {
