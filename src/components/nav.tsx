@@ -3,7 +3,7 @@ import { media } from "../assets/constants/media";
 const NavBar = () => {
   return (
     <nav>
-      <div className="fixed w-full py-8 px-16 flex justify-between items-center font-manrope text-light-primary">
+      <div className="fixed backdrop-blur-2xl w-full py-8 px-16 flex justify-between items-center font-manrope text-light-primary">
         <img src={media.logo} alt="logo" className="w-32" />
         <div>
           <ul className="flex gap-x-16 font-manrope-semi-bold">
