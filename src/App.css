@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+.bg-1 {
+  background: radial-gradient(circle at top left, #1c2b22, #0a1b13, #050d09);
+}
+
+@theme {
+  --color-green-primary: #d9fe54;
+  --color-green-transparent: #20231e;
+  --color-light-primary: #bcb9bf;
+  --color-dark-primary: #1f282b;
+  --color-dark-secondary: #0b0c17;
+  --color-dark-tertiary: #8ea5b8;
+  --font-manrope: manrope;
+  --font-manrope-medium: manropeMedium;
+  --font-manrope-semi-bold: manropeSemiBold;
+  --font-manrope-bold: manropeBold;
+  --font-manrope-extra-bold: manropeExtraBold;
+  --font-manrope-extra-light: manropeExtraLight;
+  --font-manrope-light: manropeLight;
+}
+
+/* Fonts */
+@font-face {
+  font-family: manrope;
+  src: url("assets/fonts/Manrope-Regular.ttf");
+}
+@font-face {
+  font-family: manropeMedium;
+  src: url("assets/fonts/Manrope-Medium.ttf");
+}
+@font-face {
+  font-family: manropeSemiBold;
+  src: url("assets/fonts/Manrope-SemiBold.ttf");
+}
+@font-face {
+  font-family: manropeBold;
+  src: url("assets/fonts/Manrope-Bold.ttf");
+}
+@font-face {
+  font-family: manropeExtraBold;
+  src: url("assets/fonts/Manrope-ExtraBold.ttf");
+}
+@font-face {
+  font-family: manropeExtraLight;
+  src: url("assets/fonts/Manrope-ExtraLight.ttf");
+}
+@font-face {
+  font-family: manropeLight;
+  src: url("assets/fonts/Manrope-Light.ttf");
+}
