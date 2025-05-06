@@ -4,7 +4,7 @@ import NavBar from "./components/nav";
 import Features from "./components/features";
 function App() {
   return (
-    <main className="">
+    <main>
       <NavBar />
       <Hero />
       <Features />
