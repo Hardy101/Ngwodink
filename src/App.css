@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 .bg-1 {
-  background: linear-gradient(to bottom, #1c2b22 0%, #15251d 40%, #0e1817 70%, #0b0c17 100%);
-
+  background: linear-gradient(
+    to bottom,
+    #1c2b22 0%,
+    #15251d 40%,
+    #0e1817 70%,
+    #0b0c17 100%
+  );
 }
 
 @theme {
@@ -13,6 +18,8 @@
   --color-dark-secondary: #0b0c17;
   --color-dark-secondary-transparent: #0b0c1780;
   --color-dark-tertiary: #8ea5b8;
+  --color-dark-quaternary: #13141d;
+  --color-dark-quinary: #1c1c1f;
   --font-manrope: manrope;
   --font-manrope-medium: manropeMedium;
   --font-manrope-semi-bold: manropeSemiBold;

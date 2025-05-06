@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section className="pt-16">
+    <section className="pt-16 bg-1">
       <div className="relative font-manrope h-dvh grid gap-x-24 grid-cols-2 text-white px-16 pt-32 pb-16">
         {/* Floating dots */}
         <span className="absolute top-1/2 left-1/4 w-2 h-2 bg-green-primary rounded-full"></span>
