@@ -30,69 +30,102 @@ const Steps = () => {
             </div>
             {/* <div className="rotate-90 w-full h-px bg-gradient-to-r from-transparent via-[#a8ff60] to-transparent opacity-70"></div> */}
 
-            <div className="w-1/2 process-code bg-dark-quaternary pt-16 pl-16 text-light-primary border-2 rounded-2xl border-light-primary/40">
-              <div className="code-editor bg-dark-secondary rounded-md p-8 ml-auto">
-                <p className="font-manrope-medium leading-8">
-                  <span className="text-dark-primary mr-6">1</span>
-                  <span className="text-dark-tertiary">{"<?php"}</span>
-                  <span className="block text-dark-primary">2</span>
-                  <span className="text-dark-primary mr-6">3</span>
-                  <span className="inline-block text-dark-tertiary mr-2">
-                    namespace
-                  </span>
-                  <span className="text-green-primary">
-                    App\Http\Controllers\Api
-                  </span>
-                  <br />
-                  <span className="text-dark-primary mr-6">4</span>
-                  <span className="text-dark-tertiary mr-2">use</span>
-                  <span>App\Helpers</span>
-                  <span className="text-green-primary">\Constant;</span>
-                  <br />
-                  <span className="text-dark-primary mr-6">5</span>
-                  <span className="text-dark-tertiary mr-2">use</span>
-                  <span>Illuminate\Http</span>
-                  <span className="text-green-primary">\Request;</span>
-                  <br />
-                  <span className="text-dark-primary mr-6">6</span>
-                  <span className="text-dark-tertiary mr-2">use</span>
-                  <span>App\Models</span>
-                  <span className="text-green-primary">\Report;</span>
-                  <span className="block text-dark-primary mr-6">7</span>
-                  <span className="text-dark-primary mr-6">8</span>
-                  <span className="inline-block text-dark-tertiary mr-2">
-                    class
-                  </span>
-                  <span className="mr-2 text-green-primary">
-                    ReportController
-                  </span>
-                  <span className="text-dark-tertiary mr-2">extends</span>
-                  <span className="text-green-primary">Controller</span>
-                  <br />
-                  <span className="text-dark-primary mr-6">9</span>
-                  <span className="text-purple-500">{"{"}</span>
-                  <br />
-                  <span className="text-dark-primary mr-6">10</span>
-                  <span className="inline-block text-dark-tertiary ml-8 mr-2">
-                    public
-                  </span>
-                  <span className="mr-2 text-dark-tertiary">function</span>
-                  <span className="text-green-primary">list()</span>
-                  <br />
-                  <span className="text-dark-primary mr-6">11</span>
-                  <span className="ml-8 text-purple-500">{"{"}</span>
-                  <br />
-                  <span className="text-dark-primary mr-6">12</span>
-                  <span className="inline-block text-dark-tertiary ml-16 mr-2">
-                    $filters = [];
-                  </span>
-                </p>
-              </div>
+            <CodeEditor />
+          </div>
+          <div className="process flex justify-between">
+            <div className="order-2 w-1/2 process-text grid gap-y-8 mb-auto">
+              <h3 className="text-white text-3xl font-manrope-bold">
+                Run & Debub
+              </h3>
+              <p className="text-light-primary font-manrope-medium">
+                Debug code right from the editor. Launch or attach to your
+                running app and debug with breakpoints, call stack and an
+                interactive console.
+              </p>
+              <button className="text-green-primary mr-auto flex items-center gap-x-2 font-manrope-semi-bold">
+                <span>View Intellisense</span>
+                <i className="fa-solid fa-chevron-right"></i>
+              </button>
             </div>
+            {/* <div className="rotate-90 w-full h-px bg-gradient-to-r from-transparent via-[#a8ff60] to-transparent opacity-70"></div> */}
+
+            <div className="w-1/2 process-code bg-dark-quaternary pt-16 pl-16 text-light-primary border-2 rounded-2xl border-light-primary/40"></div>
           </div>
         </div>
       </div>
     </section>
+  );
+};
+
+export const CodeEditor = () => {
+  return (
+    <div className="w-1/2 process-code bg-dark-quaternary pt-16 pl-16 text-light-primary border-2 rounded-2xl border-light-primary/40">
+      <div className="code-editor bg-dark-secondary rounded-md text-sm p-8 ml-auto">
+        <p className="font-manrope-medium">
+          <ol className="list-inside leading-7 [&>li]:before:text-dark-primary [&>li]:before:content-[attr(value)] [&>li]:before:mr-2 [&>li]:before:font-manrope-medium">
+            <li value="1">
+              <span className="text-dark-tertiary pl-3">{"<?php"}</span>
+            </li>
+            <li value="2"></li>
+            <li value="3">
+              <span className="inline-block text-dark-tertiary pl-3 pr-2">
+                namespace
+              </span>
+              <span className="text-green-primary">
+                App\Http\Controllers\Api
+              </span>
+            </li>
+            <li value="4">
+              <span className="inline-block text-dark-tertiary pl-3 pr-2">
+                use
+              </span>
+              <span>App\Helpers</span>
+              <span className="text-green-primary">\Constant;</span>
+            </li>
+            <li value="5">
+              <span className="inline-block text-dark-tertiary pl-3 pr-2">
+                use
+              </span>
+              <span>Illuminate\Http</span>
+              <span className="text-green-primary">\Request;</span>
+            </li>
+            <li value="6">
+              <span className="inline-block text-dark-tertiary pl-3 pr-2">
+                use
+              </span>
+              <span>App\Models</span>
+              <span className="text-green-primary">\Report;</span>
+            </li>
+            <li value="7">
+              <span className="inline-block text-dark-tertiary pl-3 pr-2">
+                class
+              </span>
+              <span className="mr-2 text-green-primary">ReportController</span>
+              <span className="text-dark-tertiary mr-2">extends</span>
+              <span className="text-green-primary">Controller</span>
+            </li>
+            <li value="8">
+              <span className="text-purple-500 pl-3">{"{"}</span>
+            </li>
+            <li value="9">
+              <span className="inline-block text-dark-tertiary ml-8 mr-2">
+                public
+              </span>
+              <span className="mr-2 text-dark-tertiary">function</span>
+              <span className="text-green-primary">list()</span>
+            </li>
+            <li value="10">
+              <span className="ml-8 text-purple-500 pl-3">{"{"}</span>
+            </li>
+            <li value="11">
+              <span className="inline-block text-dark-tertiary ml-16 mr-2">
+                $filters = [];
+              </span>
+            </li>
+          </ol>
+        </p>
+      </div>
+    </div>
   );
 };
 
