@@ -1,3 +1,5 @@
+import { media } from "../assets/constants/media";
+
 const Steps = () => {
   return (
     <section>
@@ -11,9 +13,9 @@ const Steps = () => {
             analyze and learn] today?
           </p>
         </div>
-        <div className="processes mt-32">
+        <div className="processes grid gap-y-16 mt-32">
           {/* Meet Intellisense */}
-          <div className="process flex justify-between">
+          <div className="process flex gap-16 justify-between">
             <div className="w-1/2 process-text grid gap-y-8 mb-auto">
               <h3 className="text-white text-3xl font-manrope-bold">
                 Meet Intellisense
@@ -32,7 +34,8 @@ const Steps = () => {
 
             <CodeEditor />
           </div>
-          <div className="process flex justify-between">
+          {/* Run & Debug */}
+          <div className="process flex gap-16 justify-between">
             <div className="order-2 w-1/2 process-text grid gap-y-8 mb-auto">
               <h3 className="text-white text-3xl font-manrope-bold">
                 Run & Debub
@@ -49,7 +52,31 @@ const Steps = () => {
             </div>
             {/* <div className="rotate-90 w-full h-px bg-gradient-to-r from-transparent via-[#a8ff60] to-transparent opacity-70"></div> */}
 
-            <div className="w-1/2 process-code bg-dark-quaternary pt-16 pl-16 text-light-primary border-2 rounded-2xl border-light-primary/40"></div>
+            <div className="w-1/2 process-code bg-dark-quaternary pt-16 pl-16 text-light-primary border-2 rounded-2xl border-light-primary/40">
+              <img src={media.debug} alt="image preview of code editor" />
+            </div>
+          </div>
+          {/* Built-in Git */}
+          <div className="process flex gap-16 justify-between">
+            <div className="w-1/2 process-text grid gap-y-3 mb-auto">
+              <h3 className="text-white text-3xl font-manrope-bold">
+                Built-in Git
+              </h3>
+              <p className="text-light-primary font-manrope-medium">
+                Working with Git and other SCM providers has never been easier.
+                Review diffs, stage files and make commits right from the
+                editor. Push and pull from any hosted SCM service.
+              </p>
+              <button className="text-green-primary mr-auto flex items-center gap-x-2 font-manrope-semi-bold mt-4">
+                <span>View Intellisense</span>
+                <i className="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            {/* <div className="rotate-90 w-full h-px bg-gradient-to-r from-transparent via-[#a8ff60] to-transparent opacity-70"></div> */}
+
+            <div className="w-1/2 process-code bg-dark-quaternary text-light-primary border-2 rounded-2xl border-light-primary/40 overflow-clip">
+              <img src={media.git} alt="image preview of code editor showing git feature" />
+            </div>
           </div>
         </div>
       </div>
