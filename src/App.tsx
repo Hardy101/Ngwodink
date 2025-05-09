@@ -3,6 +3,7 @@ import Hero from "./components/hero";
 import NavBar from "./components/nav";
 import Features from "./components/features";
 import Steps from "./components/steps";
+import Customizable from "./components/extensible";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Features />
       <Steps />
+      <Customizable />
     </main>
   );
 }

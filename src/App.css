@@ -9,6 +9,10 @@
     #0b0c17 100%
   );
 }
+.bg-2 {
+  background: linear-gradient(90deg, #1a1a1a 0%, #0d0d0d 100%);
+
+}
 
 @theme {
   --color-green-primary: #d9fe54;
