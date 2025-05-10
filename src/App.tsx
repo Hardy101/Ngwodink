@@ -4,6 +4,7 @@ import NavBar from "./components/nav";
 import Features from "./components/features";
 import Steps from "./components/steps";
 import Customizable from "./components/extensible";
+import Testimonials from "./components/testimonials";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Features />
       <Steps />
       <Customizable />
+      <Testimonials />
     </main>
   );
 }
